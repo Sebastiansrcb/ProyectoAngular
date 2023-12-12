@@ -1,0 +1,6 @@
+Lista de tareas Angular
+	Configurar interfaz a español
+	Agregar login inicial
+	Cambiar fuente
+	Modificar pantallas de detalle país
+	Estandarizar muestra de listado 
