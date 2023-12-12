@@ -19,7 +19,7 @@
             <table class="table align-middle  table-borderless">
               <tbody>
                 <tr *ngIf="dataSource.name.common">
-                    <th scope="row">Country Name : </th>
+                    <th scope="row">Nombre pa&iacute;s : </th>
                     <td>{{dataSource.name.common}}</td>
                 </tr>
                 <tr *ngIf="dataSource.area">
@@ -27,7 +27,7 @@
                     <td>{{dataSource.area}}</td>
                 </tr>
                 <tr *ngIf="dataSource.population">
-                    <th scope="row">Country Population :</th>
+                    <th scope="row">Poblaci&oacute;n :</th>
                     <td>{{dataSource.population}}</td>
                 </tr>
                 <tr *ngIf="dataSource.capital">
@@ -35,7 +35,7 @@
                     <td>{{dataSource.capital[0]}}</td>
                 </tr>
                 <tr *ngIf="dataSource.continents[0]">
-                    <th scope="row">Continent :</th>
+                    <th scope="row">Continente :</th>
                     <td>{{dataSource.continents[0]}}</td>
                 </tr>
                 <tr *ngIf="dataSource.coatOfArms &&( dataSource.coatOfArms.svg)">
@@ -43,7 +43,7 @@
                     <td><img [src]="dataSource.coatOfArms.svg" width="70px" height="70px"></td>
                 </tr>
                 <tr *ngIf="dataSource.borders && dataSource.borders.length>0">
-                    <th scope="row">Neighbour Countries :</th>
+                    <th scope="row">Paises vecinos :</th>
                     <td>
                         <button mat-raised-button style="margin-right: 3px; margin-bottom: 3px; display: flex;" *ngFor="let country of dataSource.borders">{{country}}</button>
                     </td>
