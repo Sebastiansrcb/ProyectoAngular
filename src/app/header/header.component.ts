@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   onContribute(){
     const link=document.createElement('a');
-    link.href="https://github.com/grraghav120/country-viewer/issues";
+    link.href="https://github.com/Sebastiansrcb/ProyectoAngular";
     link.click();
   }
 }
