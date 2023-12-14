@@ -3,14 +3,14 @@
 </div>
 <div *ngIf="isLoading" class="myprogress">
     <div><mat-spinner [diameter]="40" ></mat-spinner></div>
-    <div><p>One Moment Please!!</p></div>
-    <div><p>Getting your Country details!!
+    <div><p>Un Momento Porfavor!!</p></div>
+    <div><p>Obteniendo los detalles de tu pa&iacute;s!!
     </p></div>
   </div>
 <div class="container" *ngIf="!isLoading">
   <div class="row">
     <div class="col-md-6 mydiv">
-        <div><p>Country Flag</p></div>
+        <div><p>Bandera del pa&iacute;s</p></div>
         <img [src]="dataSource.flags.png" [alt]="dataSource.flags.alt" />
     </div>
     <div class="col-md-6 mydiv2">
@@ -39,7 +39,7 @@
                     <td>{{dataSource.continents[0]}}</td>
                 </tr>
                 <tr *ngIf="dataSource.coatOfArms &&( dataSource.coatOfArms.svg)">
-                    <th scope="row">Country Coat Of Arms:</th>
+                    <th scope="row">Escudo de armas:</th>
                     <td><img [src]="dataSource.coatOfArms.svg" width="70px" height="70px"></td>
                 </tr>
                 <tr *ngIf="dataSource.borders && dataSource.borders.length>0">
@@ -57,7 +57,7 @@
                     <td>{{dataSource.region}}</td>
                 </tr>
                 <tr *ngIf="dataSource.tld">
-                    <th scope="row">Top-level-domain :</th>
+                    <th scope="row">Dominio de primer nivel :</th>
                     <td>{{dataSource.tld[0]}}</td>
                 </tr>
                 <tr *ngIf="dataSource.startOfWeek">
@@ -69,11 +69,11 @@
                     <td>{{dataSource.subregion}}</td>
                 </tr>
                 <tr *ngIf="dataSource.maps">
-                    <th scope="row">Google Map Location :</th>
+                    <th scope="row">Localizaci&oacute;n en Google Maps :</th>
                     <td><a [href]="dataSource.maps.googleMaps">Click</a></td>
                 </tr>
                 <tr *ngIf="dataSource.flag">
-                    <th scope="row">Country Symbol :</th>
+                    <th scope="row">Simbolo del pa&iacute;s:</th>
                     <td>{{dataSource.flag}}</td>
                 </tr>
               </tbody>
