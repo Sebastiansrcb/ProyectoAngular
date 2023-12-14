@@ -1,5 +1,14 @@
-# Carcar del la carpeta al contenedor
+# Fase de Construcción
+FROM node:20 AS build
+WORKDIR /app
+COPY package.json package-lock.json ./
+RUN npm install
+COPY . ./
+RUN npm run build
+
+# Fase de Servidor
 FROM nginx:alpine
-COPY dist/PROYECTOANGULAR /usr/share/nginx/html
+COPY --from=build /app/dist/country-view /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
+
