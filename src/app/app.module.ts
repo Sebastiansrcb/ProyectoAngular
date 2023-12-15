@@ -18,6 +18,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
     FooterComponent,
     HomeComponent,
     CountryDetailComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserAnimationsModule,
